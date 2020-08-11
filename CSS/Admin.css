@@ -1,0 +1,21 @@
+﻿body {
+    padding:0;
+    height:auto;
+}
+#main {
+    padding:20px;
+    margin:0;
+    height:auto;
+}
+#main #box {
+        margin:auto;
+        border-radius:10px;
+        width:40%;
+        padding:20px;
+        box-shadow: 0px 0px 5px 5px #54a4cc;
+        background-color:#1e76b1;
+}
+#main #box .boxip {
+            border-radius:10px;
+            outline:none;
+}

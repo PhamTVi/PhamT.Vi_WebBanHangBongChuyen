@@ -1,0 +1,36 @@
+﻿body {
+}
+
+.hinhview2 {
+    width:1021px;
+    height:559px;
+}
+
+table tr td {
+    padding:10px;  
+}
+
+.connect {
+    width:1000px;
+    margin-left:150px;
+
+}
+.tituc {
+    padding-left: 200px;
+  
+}
+/*chỉnh hình view1*/
+.hinhtt {    
+    width:250px;
+    height:150px;
+}
+
+/*chỉnh hình view3*/
+.hinhview3 {
+    width:1021px;
+    height:559px;
+}
+
+table tr td {
+    padding:10px;  
+}

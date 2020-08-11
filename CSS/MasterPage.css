@@ -1,0 +1,261 @@
+﻿body {
+}
+#Wrapper{
+    width:100%;
+    margin:0;
+    padding:0;
+ 
+}
+* {
+    text-decoration: none;
+}
+#Header{
+    width:100%;
+    height:220px;
+    z-index: 1;
+
+    transition: top 0.3s;
+    left:0;
+    
+}
+
+        #First-Header{
+            height:50px;
+            background-color:black;
+            padding:0;
+            margin:0;
+           
+            
+        }
+            #First-Header p{
+                padding:10px 200px;
+                font-family:'.VnArabia';
+                text-align:right;
+                color:white;
+            }
+        #Second-Header{
+            height:120px;
+            background-color:white;
+
+            padding:0;
+            margin:0;
+        }
+                    #Logo{
+                        width:30%;
+                        float:left;
+                        height:120px;
+                        margin-right: 10px;
+                    }
+                    #Logo a{
+                            height: 100%;
+                            float:right;
+                            text-decoration: none;
+                    }
+                    #Search{
+                        width:40%;
+                        float:left;
+                        height:120px;
+                    }
+                        #Search-Box{
+                            border: 2px solid black;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            height:40px;
+                            margin:40px 10px;
+                        }
+                        #Search-Text{
+                            outline: none;
+                            width:79%;
+                            height:100%;
+                            margin-left:20px;
+                            float:left;
+                            border: none;
+                        }
+                        #ImageButton1{
+                            border-left:2px solid black;
+                            padding-left:10px;
+                            border: none;
+                        }
+
+                    #Account{
+                        width:29%;
+                        float:right;
+                        height:120px;
+                        border: none;
+                    }
+                        #Account-Box{
+                            height:50px;
+                            margin:37px 10px;
+                            border: none;
+                        }
+                        #ImageButton2{
+                            padding-left:40px;
+                            border: none;
+                        }
+                        #ImageButton3{
+                            padding-left:30px;
+                            border: none;
+                        }
+        #Third-Header{
+            height:50px;
+            background-color:black;
+            padding:0;
+
+            margin:0;
+        }
+            #Menu1{
+                margin:4px;
+                margin-left:300px;
+                
+            }
+            #Menu1 ul
+            {
+                margin:0;
+                padding:0;
+            
+            }
+            #Menu1 li
+            {
+                display:inline;
+                
+            }
+            #Menu1 a
+            {
+                display:block;
+                float:left;
+                margin:0;
+                width:150px;
+                height:20px;
+                text-align:center;
+                vertical-align:middle;
+                text-decoration:none;
+                font-weight:bold; 
+                padding:10px 10px;
+                color:#FFFFFF;
+                outline:none;
+            }    
+            #Menu1 a:hover 
+            {
+                color:#FFFFFF;
+                border-bottom: 1px solid #FFFFFF;
+            }
+            #Menu1 a:active, #Menu1 a.selected 
+            {
+                color:#ffd800;
+            }
+
+#Left{
+    width:19%;
+    float:left;
+    padding:10px;
+    margin:10px 0 0 0;
+   
+}
+    #btnDanhMucSP{
+        background-color:transparent;
+        border-bottom:2px solid black;
+        font-weight:bold;
+        font-size:17px;
+    border-left-style: none;
+    border-left-color: inherit;
+    border-left-width: medium;
+    border-right-style: none;
+    border-right-color: inherit;
+    border-right-width: medium;
+    border-top-style: none;
+    border-top-color: inherit;
+    border-top-width: medium;
+}
+    #Sidebar{
+        margin:0;
+        padding:0;
+
+    }
+        #Sidebar img{
+            float:left;
+            margin-left:20px;
+        }
+        #Sidebar ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            
+        } 
+        #Sidebar ul li{
+            border-bottom:2px solid black;
+            height:50px;
+            margin-top:20px;
+    width: 216px;
+}
+        #Sidebar ul li a{
+            display: block;
+            float:left;
+            color: #000;
+            text-decoration: none;
+            margin-left:30px;
+            font-weight:bold;
+            font-size:17px;
+    width: 112px;
+    height: 21px;
+}
+        #Sidebar ul li a:hover{
+            font-weight:bold;
+            color:orange;
+        }
+
+
+
+#Content{
+    width:66%;
+    float:left;
+    padding:10px;
+    margin:10px 0 0 0;
+   
+}
+
+#Right{
+    width:15%;
+    float:right;
+    padding:10px;
+    margin:10px 0 0 0;
+    
+    
+}
+
+#Footer{
+    width:100%;
+    clear:both;
+    background-color:black;
+    padding:0;
+    margin:0;
+    height:350px;
+    color:white;
+}   
+    #Footer1{
+        height:298px;
+        padding:0;
+        margin:0 150px;
+    }
+        #Footer1 a{
+            text-decoration:none;
+            font-weight:bold; 
+            color:#FFFFFF;
+        }
+    #Footer2{
+        border-top:2px solid white;
+        height:52px;
+        padding:0;
+        margin:0;
+    }
+    #Footer2 p{
+        color:white;
+        text-align:center;
+    height: 52px;
+}
+.hinh {
+    width: 30px;
+    height:30px;
+}
+
+  

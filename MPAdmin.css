@@ -1,0 +1,52 @@
+﻿body {
+    padding:0;
+    height:auto;
+
+}
+#main {
+    height:auto;
+    padding:10px;
+}
+    #main #banner {
+        background-color:#305abc;
+        height:70px;
+    }
+    #main #right {
+        height:100%;
+        width:30%;
+        float:right;
+        padding-top:10px;
+    }
+    #main #left {
+        width:40%;
+        float:left;
+        font-size:30px;
+        text-transform:uppercase;
+        color:white;
+        padding-left:20px;
+        padding-top:15px;
+    }
+#content {
+    height:auto;
+}
+#content #ctleft {
+    height:auto;
+    width:15%;
+    float:left;
+    text-align:center;
+    margin-top:30px;
+}
+#content #ctright {
+    height:auto;
+    width:84%;
+    float:right; 
+    margin-top:-30px; 
+    margin-left:10px;
+    padding-left:10px;
+    border-left:solid 2px;
+}
+
+.sanpham table {
+    margin-left: 450px;
+}
+

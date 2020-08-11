@@ -1,0 +1,148 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="CSS/MasterPage.css" rel="stylesheet" />
+    <link href="CSS/Trang01.css" rel="stylesheet" />
+     <link href="CSS/KeoLen.css" rel="stylesheet" />
+     <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="Wrapper">
+        <div id="Header">
+            <div id="First-Header">
+             <table style="margin:auto;margin-left: 75% ">
+                    <tr>
+                        <td style="font-size:20px;margin-right:10px; color: white;">
+                         <asp:LinkButton ID="Txtss" runat="server" OnClick="thongtin"><img src="Image/Nguoi2.png" /></asp:LinkButton>
+                        </td>
+                        <td style="border-left:solid 2px white; padding-left:5px;">
+                            <asp:Button ID="Button1" runat="server" PostBackUrl="~/TrangChu.aspx"  Text="Đăng xuất" BackColor="Yellow" OnClick="Button1_Click" />  
+                        </td>
+                        <td>
+                            <asp:ImageButton   ID="Amnin" runat="server" ImageUrl="~/Image/Nguoi.png" Height="20px" Width="20px" OnClick="Aminn" BorderColor="White"></asp:ImageButton>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="Second-Header">
+                <div id="Logo">
+                    <a href="#">
+                        <br />
+                        <h1>V-I-P SPORT </h1></a>
+
+                </div>
+                <div id="Search">
+                    <div id="Search-Box">
+                        <input id="Search-Text" type="text"  placeholder="Tìm kiếm sản phẩm"/>
+                        <asp:ImageButton ID="ImageButton1"  runat="server" ImageUrl="~/Image/Search.png" ToolTip="Tìm Kiếm" Height="39px" Width="55px" />
+                    </div>
+                </div>
+                
+                <div id="Account">
+                    <div id="Account-Box">
+                        <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Image/Account.png" ToolTip="Tài Khoản" Height="50px" Width="70px" PostBackUrl="~/DangNhap.aspx" />
+                        <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/Image/Cart.png" ToolTip="Giỏ Hàng" Height="50px" Width="70px"  PostBackUrl="~/GioHangLike.aspx"/>
+                    </div>
+                </div>
+
+            </div>
+            <div id="Third-Header">
+                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" StaticDisplayLevels="2" StaticSubMenuIndent="10px" DataSourceID="SiteMapDataSource1"  ></asp:Menu>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                    
+            </div>
+        </div>
+        
+        <div id="Content">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="Right">
+        </div>
+        <div id="Footer">
+            <div id="Footer1">
+                <table style="width: 100%;height:100%; ">
+                    <tr>
+                        <td style="font-weight: bold;width: 320px;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>Hotline</b><br />
+                            <span><img src="Image/Phone.png" style="height: 30px; width: 30px" />  0123456789</span><br /><br />
+                            
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <b>Email</b><br />
+                            <span > <img src="Image/Mail.png" style="height: 30px; width: 30px" />  phamthivi459@gmail.com</span><br /><br />
+                            <a href="#">CHÍNH SÁCH MUA HÀNG</a><br /> <br />
+                            <a href="#">HƯỚNG DẪN MUA HÀNG</a>
+                        </td>
+                        <td style="width:749px; font-weight: bold; ">
+                            <span style="margin-left: 20px">
+                                <img src="Image/Local.png" style="height: 30px; width: 30px"  /> Quảng Ngãi ( 8h - 22h )<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tịnh Thọ, Sơn Tịnh, Tp.Quảng Ngãi
+                            </span><br /><br />
+                            <span style="margin-left: 20px"> 
+                                <img src="Image/Local.png" style="height: 30px; width: 30px"  /> Hồ Chí Minh ( 8h - 22h )<br />
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 Bùi Xuân Phái, Tây Thạnh, Tân phú, TP.HCM
+                            </span><br /><br />
+                            <span style="margin-left: 20px">
+                                <img src="Image/Local.png" style="height: 30px; width: 30px"  /> Đà Nẵng ( 8h - 22h )<br />
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hai Bà Trưng, Hải Hồ, Tp. Đà Nẵng 
+                            </span><br /><br />
+                        </td>
+                        <td style="text-align: center; vertical-align: top">
+                            &nbsp;<img src="Image/logoooo.jpg" style="height: 115px; width: 247px; margin-top: 0px;" /><br />
+                            <b>Hãy liên hệ với chúng tớ </b><br /><br />
+                            <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="~/Image/FB.png" Width="50px" Height="50px" PostBackUrl="https://www.facebook.com/Vimon04052000/" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="~/Image/Insta.png" Width="50px" Height="50px" PostBackUrl="https://www.instagram.com/pham_t.vi/" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="Footer2">
+                <p>©Phạm Thị Vi<br />
+                    Email: phamthivi459@gmail.com
+                </p>
+            </div>
+            
+        </div>
+    </div>
+     <a href="#" class="cd-top"><img src="Image/Len.png" /></a> 
+    </form>
+     <script>
+         jQuery(document).ready(function ($) {
+             // browser window scroll (in pixels) after which the "back to top" link is shown
+             var offset = 300,
+             //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+             offset_opacity = 1200,
+             //duration of the top scrolling animation (in ms)
+             scroll_top_duration = 700,
+             //grab the "back to top" link
+             $back_to_top = $('.cd-top');
+             //hide or show the "back to top" link
+             $(window).scroll(function () {
+                 ($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+                 if ($(this).scrollTop() > offset_opacity) {
+                     $back_to_top.addClass('cd-fade-out');
+                 }
+             });
+             //smooth scroll to top
+             $back_to_top.on('click', function (event) {
+                 event.preventDefault();
+                 $('body,html').animate({
+                     scrollTop: 0,
+                 }, scroll_top_duration
+                 );
+             });
+         });
+    </script>
+</body>
+</html>
